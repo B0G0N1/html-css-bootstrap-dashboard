@@ -1,11 +1,56 @@
-/* RESET */
+/* -------------------------
+        RESET.CSS
+---------------------------*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* DEBUG */
+
+/* -------------------------
+        BASE.CSS
+---------------------------*/
+
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+
+
+/* -------------------------
+        DEBUG.CSS
+---------------------------*/
 *{
     border: 1px dashed red;
+}
+
+
+/* -------------------------
+        LAYOUT.CSS
+---------------------------*/
+
+header {
+    height: 100px;
+    background-color: pink;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 100px);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70px;
+    background-color: black;
+    padding: 10px;
+}
+
+.main-content {
+    width: calc(100vw - 70px);
+    overflow-y: auto;
+    background-color: rgb(28, 201, 129);
 }
