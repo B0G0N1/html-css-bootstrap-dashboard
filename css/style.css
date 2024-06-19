@@ -21,9 +21,9 @@ body {
 /* -------------------------
         DEBUG.CSS
 ---------------------------*/
-*{
+/* *{
     border: 1px dashed red;
-}
+} */
 
 
 /* -------------------------
@@ -31,13 +31,12 @@ body {
 ---------------------------*/
 
 header {
-    height: 100px;
-    background-color: pink;
+    background-color: #f8f9fa;
 }
 
 main {
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
 }
 
 .sidebar {
@@ -53,4 +52,14 @@ main {
     width: calc(100vw - 70px);
     overflow-y: auto;
     background-color: rgb(28, 201, 129);
+}
+
+
+
+.logo {
+    width: 50px;
+}
+
+.bg-bright-blue {
+    background-color: #1b72e8;
 }
