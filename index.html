@@ -16,44 +16,96 @@
     <header class="py-1">
         <div class="container-fluid">
             <div class="row">
+                <!-- Logo Column -->
                 <div class="col-2">
-                    <img src="./img/mobile-logo.png" class="logo" alt="logo">
+                    <div class="content h-100">
+                        <img src="./img/mobile-logo.png" class="logo d-xl-none" alt="mobile-logo">
+                        <img src="./img/logo.svg" class="d-none d-xl-block h-100" alt="logo">
+                    </div>
                 </div>
-                <div class="col-8 d-flex align-items-center">
-                    <div class="input-group">
+                <!-- Search Bar Column -->
+                <div class="col-9 d-flex align-items-center">
+                    <div class="container input-group">
                         <span class="input-group-text" id="basic-addon1">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
                         <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                 </div>
-                <div class="col-2 d-flex align-items-center">
-                    <i class="fa-solid fa-bell fs-2"></i>
+                <!-- Options Column -->
+                <div class="col-1 d-flex align-items-center justify-content-center gap-2">
+                    <i class="fa-solid fa-list-ul d-none d-xl-block fs-5"></i>
+                    <i class="fa-solid fa-circle-question d-none d-xl-block fs-5"></i>
+                    <i class="fa-solid fa-ellipsis-vertical d-none d-xl-block fs-5"></i>
+                    <i class="fa-solid fa-bell fs-5"></i>
                 </div>
             </div>
         </div>
     </header>
     <!-- Main -->
     <main>
-        <!-- Barra Laterale -->
-        <div class="sidebar text-white text-center py-3 fs-2">
-            <div>
-                <i class="fa-solid fa-house"></i>
-                <i class="fa-solid fa-chart-simple"></i>
-                <i class="fa-solid fa-signal"></i>
+        <!-- Sidebar -->
+        <div class="sidebar text-white p-3 fs-5">
+            <div class="content top-sidebar d-xl-flex gap-2">
+                <div class="icon d-xl-flex flex-column justify-content-evenly text-center">
+                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <i class="fa-solid fa-signal"></i>
+                </div>
+                <div class="menu d-none d-xl-block">
+                    <p>Home</p>
+                    <p>Stats</p>
+                    <p>Signals</p>
+                </div>
             </div>
-            <div>
+            <div class="content options d-xl-flex justify-content-center align-items-center gap-2">
                 <i class="fa-solid fa-gear"></i>
+                <p class="d-none d-xl-block">Admin</p>
             </div>
         </div>
         <!-- Main Content -->
         <div class="main-content">
+            <!-- Header Main -->
             <div class="header-main bg-bright-blue text-white p-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt sunt asperiores cumque natus minima beatae, soluta at repudiandae nam sapiente voluptas enim consectetur ratione, fuga, placeat magnam numquam unde!</p>
+                <div class="container">
+                    <div class="row gy-4">
+                        <!-- New Student -->
+                        <div class="col-12 col-md-4 col-lg-3 order-md-1">
+                            <div class="content d-flex justify-xl-content-start gap-2">
+                                <p class="fs-4">Nuovo Studente</p>
+                                <i class="fa-solid fa-plus border rounded p-2"></i>
+                            </div>
+                        </div>
+                        <!-- Boolean -->
+                        <div class="col-12 col-md-4 col-lg-5">
+                            <div class=" content d-flex align-items-center gap-2">
+                                <h2 class="fs-1 fw-bold">Boolean</h2>
+                                <span class="badge bg-denim-blue">Piano Blaze</span>
+                            </div>
+                            <div class="content d-flex align-items-center gap-2 my-2">
+                                <span class="badge bg-denim-blue">3 app</span>
+                                <i class="fa-solid fa-angles-right"></i>
+                                <span class="badge bg-denim-blue d-xl-none">+</span>
+                                <span class="badge bg-denim-blue d-none d-xl-block">Boolean mobile</span>
+                                <span class="badge bg-denim-blue d-none d-xl-block">Boolean web app</span>
+                                <span class="badge bg-denim-blue d-none d-xl-block">Boolean blog app</span>
+                            </div>
+                        </div>
+                        <!-- Online Students -->
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <div class="content">
+                                <p>Studenti online negli ultimi 30 minuti</p>
+                                <p class="display-4">125</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- Content -->
             <div class="text-black p-3">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ad! Recusandae doloribus eveniet voluptates ab quo placeat molestiae itaque exercitationem nemo eum laudantium alias, assumenda soluta explicabo quam ducimus aut.</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, ad! Recusandae doloribus eveniet voluptates ab quo placeat molestiae itaque exercitationem nemo eum laudantium alias, assumenda soluta explicabo quam ducimus aut.</p>
+                <h2>BOOLEAN</h2>
             </div>
         </div>
     </main>
