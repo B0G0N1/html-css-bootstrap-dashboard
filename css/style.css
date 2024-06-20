@@ -21,9 +21,9 @@ body {
 /* -------------------------
         DEBUG.CSS
 ---------------------------*/
-*{
+/* *{
     border: 1px dashed red;
-}
+} */
 
 
 /* -------------------------
@@ -34,7 +34,7 @@ header {
     background-color: #f8f9fa;
 }
 
-main {
+.main-section {
     display: flex;
     height: calc(100vh - 50px);
 }
@@ -48,7 +48,7 @@ main {
     padding: 10px;
 }
 
-.main-content {
+main {
     width: calc(100vw - 70px);
     overflow-y: auto;
     background-color: rgb(28, 201, 129);
@@ -66,6 +66,13 @@ main {
     background-color: #165bba;
 }
 
+.bg-very-light-gray {
+    background-color: #f7f7f7;
+}
+.bg-pink {
+    background-color: pink;
+}
+
 p, h2 {
     margin-bottom: 0px;
 }
@@ -74,7 +81,7 @@ p, h2 {
     .sidebar {
         width: 150px;
     }
-    .main {
+    main {
         width: calc(100vw - 150px);
     }
 }
