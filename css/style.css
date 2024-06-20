@@ -51,7 +51,6 @@ header {
 main {
     width: calc(100vw - 70px);
     overflow-y: auto;
-    background-color: rgb(28, 201, 129);
 }
 
 .logo {
@@ -73,15 +72,35 @@ main {
     background-color: pink;
 }
 
+.bg-coral-red {
+    background-color: #f26551;
+}
+
 p, h2 {
     margin-bottom: 0px;
 }
 
-@media screen and (min-width: 1200px) {
+.next-class, {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
     .sidebar {
-        width: 150px;
+        width: 90px;
     }
     main {
-        width: calc(100vw - 150px);
+        width: calc(100vw - 90px);
+    }
+    .main-header p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .sidebar {
+        width: 120px;
+    }
+    main {
+        width: calc(100vw - 120px);
     }
 }

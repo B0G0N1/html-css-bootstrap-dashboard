@@ -19,8 +19,8 @@
                 <!-- Logo Column -->
                 <div class="col-2">
                     <div class="content h-100">
-                        <img src="./img/mobile-logo.png" class="logo d-xl-none" alt="mobile-logo">
-                        <img src="./img/logo.svg" class="d-none d-xl-block h-100" alt="logo">
+                        <img src="./img/mobile-logo.png" class="logo d-lg-none" alt="mobile-logo">
+                        <img src="./img/logo.svg" class="d-none d-lg-block h-100" alt="logo">
                     </div>
                 </div>
                 <!-- Search Bar Column -->
@@ -34,9 +34,9 @@
                 </div>
                 <!-- Options Column -->
                 <div class="col-1 d-flex align-items-center justify-content-center gap-2">
-                    <i class="fa-solid fa-list-ul d-none d-xl-block fs-5"></i>
-                    <i class="fa-solid fa-circle-question d-none d-xl-block fs-5"></i>
-                    <i class="fa-solid fa-ellipsis-vertical d-none d-xl-block fs-5"></i>
+                    <i class="fa-solid fa-list-ul d-none d-lg-block fs-5"></i>
+                    <i class="fa-solid fa-circle-question d-none d-lg-block fs-5"></i>
+                    <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block fs-5"></i>
                     <i class="fa-solid fa-bell fs-5"></i>
                 </div>
             </div>
@@ -45,39 +45,43 @@
     <!-- Main Section-->
     <div class="main-section">
         <!-- SIDEBAR -->
-        <div class="sidebar text-white p-3 fs-5">
-            <div class="content top-sidebar d-xl-flex gap-2">
-                <div class="icon d-xl-flex flex-column justify-content-evenly text-center">
-                    <i class="fa-solid fa-house"></i>
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <i class="fa-solid fa-signal"></i>
+        <div class="sidebar text-white d-lg-flex align-items-center p-3">
+            <div class="content top-sidebar d-lg-flex gap-3">
+                <div class="icon d-flex flex-column justify-content-evenly text-center">
+                    <i class="fa-solid fa-house mb-3"></i>
+                    <i class="fa-solid fa-chart-simple mb-3"></i>
+                    <i class="fa-solid fa-signal mb-3"></i>
                 </div>
-                <div class="menu d-none d-xl-block">
-                    <p>Home</p>
-                    <p>Stats</p>
-                    <p>Signals</p>
+                <div class="menu d-none d-lg-block">
+                    <p class="mb-3">Home</p>
+                    <p class="mb-3">Stats</p>
+                    <p class="mb-3">Signals</p>
                 </div>
             </div>
-            <div class="content options d-xl-flex justify-content-center align-items-center gap-2">
-                <i class="fa-solid fa-gear"></i>
-                <p class="d-none d-xl-block">Admin</p>
+            <div class="content bottom-sidebar d-lg-flex gap-3">
+                <div class="icon d-flex flex-column justify-content-evenly text-center">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div class="menu d-none d-lg-block">
+                    <p class="d-none d-lg-block">Admin</p>
+                </div>
             </div>
         </div>
         <!-- MAIN -->
         <main>
             <!-- Main Header -->
             <div class="main-header bg-bright-blue text-white py-2">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row gy-4">
                         <!-- New Student -->
                         <div class="col-12 col-md-4 col-lg-3 order-md-1">
-                            <div class="content d-flex justify-xl-content-start gap-2">
-                                <p class="fs-5">Nuovo Studente</p>
+                            <div class="content d-flex justify-lg-content-start align-items-center gap-2">
+                                <p>Nuovo Studente</p>
                                 <i class="fa-solid fa-plus border rounded p-2"></i>
                             </div>
                         </div>
                         <!-- Boolean -->
-                        <div class="col-12 col-md-4 col-lg-5">
+                        <div class="col-12 col-md-4 col-lg-6">
                             <div class=" content d-flex align-items-center gap-2">
                                 <h2 class="fs-1 fw-bold">Boolean</h2>
                                 <span class="badge bg-denim-blue">Piano Blaze</span>
@@ -85,27 +89,27 @@
                             <div class="content d-flex align-items-center gap-2 my-2">
                                 <span class="badge bg-denim-blue">3 app</span>
                                 <i class="fa-solid fa-angles-right"></i>
-                                <span class="badge bg-denim-blue d-xl-none">+</span>
-                                <span class="badge bg-denim-blue d-none d-xl-block">Boolean mobile</span>
-                                <span class="badge bg-denim-blue d-none d-xl-block">Boolean web app</span>
-                                <span class="badge bg-denim-blue d-none d-xl-block">Boolean blog app</span>
+                                <span class="badge bg-denim-blue d-lg-none">+</span>
+                                <span class="badge bg-denim-blue d-none d-lg-block">Boolean mobile</span>
+                                <span class="badge bg-denim-blue d-none d-lg-block">Boolean web app</span>
+                                <span class="badge bg-denim-blue d-none d-lg-block">Boolean blog app</span>
                             </div>
                         </div>
                         <!-- Online Students -->
-                        <div class="col-12 col-md-4 col-lg-4">
+                        <div class="col-12 col-md-4 col-lg-3">
                             <div class="content">
-                                <p>Studenti online negli ultimi 30 minuti</p>
-                                <p class="display-4">125</p>
+                                <p class="mr-3">Studenti online negli ultimi 30 minuti</p>
+                                <p class="fs-1">125</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Main Content -->
-            <div class="main-content text-black py-4">
+            <div class="main-content text-black bg-very-light-gray py-4">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-xl-7">
+                        <div class="col-12 col-lg-7 mb-3 mb-lg-0">
                             <!-- Next Class -->
                             <div class="card next-class mb-3">
                                 <div class="card-header">
@@ -115,29 +119,141 @@
                                     <table class="table">
                                         <thead>
                                             <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">First</th>
-                                                <th scope="col">Last</th>
-                                                <th scope="col">Handle</th>
+                                                <th scope="col" class="col-5">Nome</th>
+                                                <th scope="col" class="col-3 text-center d-none d-md-table-cell">Data Inizio</th>
+                                                <th scope="col" class="col-1 text-center d-none d-md-table-cell">ROI</th>
+                                                <th scope="col" class="col-1 text-center">Stato</th>
+                                                <th scope="col" class="col-2 text-center">Azioni</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody class="text-center">
+                                            <!-- Classe 75 -->
                                             <tr>
-                                                <th scope="row">1</th>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="rounded-circle bg-coral-red p-1 text-white me-2"><i class="fa-solid fa-code"></i></div>
+                                                        Classe 75
+                                                    </div>
+                                                </td>
+                                                <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                <td>
+                                                    <i class="fa-solid fa-pen rounded border p-2"></i>
+                                                    <i class="fa-solid fa-trash rounded border p-2"></i>
+                                                </td>
                                             </tr>
+                                            <!-- Classe 76 -->
                                             <tr>
-                                                <th scope="row">2</th>
-                                                <td>Jacob</td>
-                                                <td>Thornton</td>
-                                                <td>@fat</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="rounded-circle bg-coral-red p-1 text-white me-2"><i class="fa-solid fa-code"></i></div>
+                                                        Classe 76
+                                                    </div>
+                                                </td>
+                                                <td class="d-none d-md-table-cell">16 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                <td>
+                                                    <i class="fa-solid fa-pen rounded border p-2"></i>
+                                                    <i class="fa-solid fa-trash rounded border p-2"></i>
+                                                </td>
                                             </tr>
+                                            <!-- Classe 77 -->
                                             <tr>
-                                                <th scope="row">3</th>
-                                                <td colspan="2">Larry the Bird</td>
-                                                <td>@twitter</td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="rounded-circle bg-coral-red p-1 text-white me-2"><i class="fa-solid fa-code"></i></div>
+                                                        Classe 77
+                                                    </div>
+                                                </td>
+                                                <td class="d-none d-md-table-cell">17 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge rounded-pill text-bg-warning">process</span></td>
+                                                <td>
+                                                    <i class="fa-solid fa-pen rounded border p-2"></i>
+                                                    <i class="fa-solid fa-trash rounded border p-2"></i>
+                                                </td>
+                                            </tr>
+                                            <!-- Classe 78 -->
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="rounded-circle bg-coral-red p-1 text-white me-2"><i class="fa-solid fa-code"></i></div>
+                                                        Classe 78
+                                                    </div>
+                                                </td>
+                                                <td class="d-none d-md-table-cell">18 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                <td>
+                                                    <i class="fa-solid fa-pen rounded border p-2"></i>
+                                                    <i class="fa-solid fa-trash rounded border p-2"></i>
+                                                </td>
+                                            </tr>
+                                            <!-- Classe 79 -->
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="rounded-circle bg-coral-red p-1 text-white me-2"><i class="fa-solid fa-code"></i></div>
+                                                        Classe 79
+                                                    </div>
+                                                </td>
+                                                <td class="d-none d-md-table-cell">19 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge rounded-pill text-bg-danger">Failed</span></td>
+                                                <td>
+                                                    <i class="fa-solid fa-pen rounded border p-2"></i>
+                                                    <i class="fa-solid fa-trash rounded border p-2"></i>
+                                                </td>
+                                            </tr>
+                                            <!-- Classe 80 -->
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="rounded-circle bg-coral-red p-1 text-white me-2"><i class="fa-solid fa-code"></i></div>
+                                                        Classe 80
+                                                    </div>
+                                                </td>
+                                                <td class="d-none d-md-table-cell">20 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                <td>
+                                                    <i class="fa-solid fa-pen rounded border p-2"></i>
+                                                    <i class="fa-solid fa-trash rounded border p-2"></i>
+                                                </td>
+                                            </tr>
+                                            <!-- Classe 81 -->
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="rounded-circle bg-coral-red p-1 text-white me-2"><i class="fa-solid fa-code"></i></div>
+                                                        Classe 81
+                                                    </div>
+                                                </td>
+                                                <td class="d-none d-md-table-cell">21 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge rounded-pill text-bg-danger">Failed</span></td>
+                                                <td>
+                                                    <i class="fa-solid fa-pen rounded border p-2"></i>
+                                                    <i class="fa-solid fa-trash rounded border p-2"></i>
+                                                </td>
+                                            </tr>
+                                            <!-- Classe 82 -->
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="rounded-circle bg-coral-red p-1 text-white me-2"><i class="fa-solid fa-code"></i></div>
+                                                        Classe 82
+                                                    </div>
+                                                </td>
+                                                <td class="d-none d-md-table-cell">22 Febbraio 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                                <td>
+                                                    <i class="fa-solid fa-pen rounded border p-2"></i>
+                                                    <i class="fa-solid fa-trash rounded border p-2"></i>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -188,7 +304,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-xl-5">
+                        <div class="col-12 col-lg-5">
                             <!-- ToD0 -->
                             <div class="card todo mb-3">
                                 <div class="card-header">
