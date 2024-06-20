@@ -19,59 +19,40 @@ body {
 
 
 /* -------------------------
-        DEBUG.CSS
----------------------------*/
-/* *{
-    border: 1px dashed red;
-} */
-
-
-/* -------------------------
         LAYOUT.CSS
 ---------------------------*/
 
 header {
-    background-color: #f8f9fa;
-    height: 50px;
+    height: 80px;
 }
 
 .main-section {
     display: flex;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
 }
 
 .sidebar {
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #13293f;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 70px;
-    background-color: black;
+    width: 80px;
     padding: 10px;
 }
 
 main {
-    width: calc(100vw - 70px);
+    width: calc(100vw - 80px);
     overflow-y: auto;
 }
 
+
+/* -------------------------
+        CONTENT.CSS
+---------------------------*/
+
 .logo {
-    width: 50px;
-}
-
-.bg-bright-blue {
-    background-color: #1b72e8;
-}
-
-.bg-denim-blue {
-    background-color: #165bba;
-}
-
-.bg-very-light-gray {
-    background-color: #f7f7f7;
-}
-
-.bg-coral-red {
-    background-color: #f26551;
+    height: 70px;
 }
 
 p, h2 {
@@ -82,16 +63,75 @@ p, h2 {
     font-size: 12px;
 }
 
+
+/* -------------------------
+        STYLE.CSS
+---------------------------*/
+
+.bg-bright-blue {
+    background-color: #1b72e8;
+}
+
+.bg-denim-blue {
+    background-color: #165bba;
+}
+
+.bg-light-gray {
+    background-color: #e5e5e5;
+}
+
+.bg-very-light-gray {
+    background-color: #f8f9fa;
+}
+
+.bg-coral-red {
+    background-color: #f26551;
+}
+
+.bg-pink {
+    background-color: pink;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+/* -------------------------
+        HOVER.CSS
+---------------------------*/
+
 .fa-bell:hover {
     color: #e98c15;
 }
 
+.home:hover,
+.stats:hover,
+.signals:hover,
+.options:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* -------------------------
+        QUERY.CSS
+---------------------------*/
+
 @media screen and (min-width: 768px) {
     .sidebar {
-        width: 90px;
+        width: 50px;
     }
     main {
-        width: calc(100vw - 90px);
+        width: calc(100vw - 50px);
+    }
+    header {
+        height: 70px;
+    }
+    .main-section {
+        display: flex;
+        height: calc(100vh - 70px);
+    }
+    .logo {
+        height: 60px;
     }
     .main-header p {
         font-size: 15px;
@@ -104,5 +144,15 @@ p, h2 {
     }
     main {
         width: calc(100vw - 120px);
+    }
+    header {
+        height: 50px;
+    }
+    .main-section {
+        display: flex;
+        height: calc(100vh - 50px);
+    }
+    .logo {
+        height: 40px;
     }
 }

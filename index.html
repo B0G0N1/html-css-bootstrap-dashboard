@@ -13,27 +13,18 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header class="py-2">
-        <div class="container-fluid">
+    <header class="bg-very-light-gray py-2 d-flex align-items-center">
+        <div class="container-fluid bg-white">
             <div class="row">
-                <!-- Logo Column -->
-                <div class="col-2">
-                    <div class="content h-100">
-                        <img src="./img/mobile-logo.png" class="logo d-lg-none" alt="mobile-logo">
-                        <img src="./img/logo.svg" class="d-none d-lg-block h-100" alt="logo">
-                    </div>
-                </div>
-                <!-- Search Bar Column -->
-                <div class="col-9 d-flex align-items-center">
-                    <div class="container input-group">
-                        <span class="input-group-text" id="basic-addon1">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <img src="./img/mobile-logo.png" class="logo d-lg-none" alt="mobile-logo">
+                    <img src="./img/logo.svg" class="d-none d-lg-block" alt="logo">
+                    <div class="container-fluid input-group h-100 py-2">
+                        <span class="input-group-text bg-light-gray" id="search-addon">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
-                        <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control bg-light-gray" placeholder="Prova a cercare: Lezioni di Laravel">
                     </div>
-                </div>
-                <!-- Options Column -->
-                <div class="col-1 d-flex align-items-center justify-content-center gap-2">
                     <i class="fa-solid fa-list-ul d-none d-lg-block fs-5"></i>
                     <i class="fa-solid fa-circle-question d-none d-lg-block fs-5"></i>
                     <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block fs-5"></i>
@@ -45,24 +36,24 @@
     <!-- Main Section-->
     <div class="main-section">
         <!-- SIDEBAR -->
-        <div class="sidebar text-white d-lg-flex align-items-center p-3">
-            <div class="content top-sidebar d-lg-flex gap-3">
-                <div class="icon d-flex flex-column justify-content-evenly text-center">
-                    <i class="fa-solid fa-house mb-3"></i>
-                    <i class="fa-solid fa-chart-simple mb-3"></i>
-                    <i class="fa-solid fa-signal mb-3"></i>
+        <div class="sidebar text-white text-center pt-3">
+            <div class="top-sidebar">
+                <div class="home d-lg-flex align-items-center justify-content-center py-2 gap-2">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="d-none d-lg-block">Home</p>
                 </div>
-                <div class="menu d-none d-lg-block">
-                    <p class="mb-3">Home</p>
-                    <p class="mb-3">Stats</p>
-                    <p class="mb-3">Signals</p>
+                <div class="stats d-lg-flex align-items-center justify-content-center py-2 gap-2">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <p class="d-none d-lg-block">Stats</p>
+                </div>
+                <div class="signals d-lg-flex align-items-center justify-content-center py-2 gap-2">
+                    <i class="fa-solid fa-signal"></i>
+                    <p class="d-none d-lg-block">Signals</p>
                 </div>
             </div>
-            <div class="content bottom-sidebar d-lg-flex gap-3">
-                <div class="icon d-flex flex-column justify-content-evenly text-center">
+            <div class="bottom-sidebar">
+                <div class="options d-lg-flex align-items-center justify-content-center py-2 gap-2">
                     <i class="fa-solid fa-gear"></i>
-                </div>
-                <div class="menu d-none d-lg-block">
                     <p class="d-none d-lg-block">Admin</p>
                 </div>
             </div>
@@ -116,7 +107,7 @@
                                     <h4>Prossime Classi</h4>
                                 </div>
                                 <div class="card-body">
-                                    <table class="table  table-hover"">
+                                    <table class="table  table-hover">
                                         <thead>
                                             <tr>
                                                 <th scope="col" class="col-5">Nome</th>
@@ -314,24 +305,24 @@
                                     <ul class="list-group">
                                         <li class="list-group-item">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
+                                                <input class="form-check-input" type="checkbox" value="" id="kickoff">
+                                                <label class="form-check-label" for="kickoff">
                                                     Kickoff nuove classi
                                                 </label>
                                             </div>
                                         </li>
                                         <li class="list-group-item">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                <label class="form-check-label" for="flexCheckChecked">
+                                                <input class="form-check-input" type="checkbox" value="" id="lesson" checked>
+                                                <label class="form-check-label" for="lesson">
                                                     Lezione su Bootstrap 5 in classe #75
                                                 </label>
                                             </div>
                                         </li>
                                         <li class="list-group-item">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                <label class="form-check-label" for="flexCheckChecked">
+                                                <input class="form-check-input" type="checkbox" value="" id="check-username" checked>
+                                                <label class="form-check-label" for="check-username">
                                                     Controllare username github studenti
                                                 </label>
                                             </div>
@@ -364,7 +355,7 @@
         </main>
     </div>
     <!-- Offcanvas -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -393,7 +384,7 @@
                     <div class="col-12">
                         <!-- Email -->
                         <div class="mb-3">
-                            <label for="email-addon" class="form-label">Email</label>
+                            <label class="form-label">Email</label>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="email-addon">@</span>
                                 <input type="email" class="form-control">
@@ -422,12 +413,14 @@
                         <!-- States -->
                         <div class="mb-3">
                             <label for="states-addon" class="form-label">Stato</label>
+                            <div class="input-group">
                             <select class="form-select" id="states-addon">
                                 <option selected>Scegli...</option>
                                 <option value="1">Italy</option>
                                 <option value="2">France</option>
                                 <option value="3">Germany</option>
                             </select>
+                            </div>
                         </div>
                     </div>
                     <!-- CAP -->
@@ -443,7 +436,9 @@
                     <div class="col-12">
                         <div class="mb-3">
                             <label for="photo-addon" class="form-label">Foto</label>
-                            <input type="file" class="form-control" id="photo-addon">
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="photo-addon">
+                            </div>
                         </div>
                     </div>
                     <!-- Checkbox -->
